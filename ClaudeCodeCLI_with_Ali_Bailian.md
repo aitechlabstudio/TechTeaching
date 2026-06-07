@@ -61,12 +61,13 @@ Set-Content -Path "$env:USERPROFILE\.claude.json" -Value '{ "hasCompletedOnboard
 
 ### 在 PowerShell 中一键写入配置（华北区）
 
-```powershell
+```
 New-Item -ItemType Directory -Path "$env:USERPROFILE\.claude" -Force | Out-Null
+
 @'
 {
     "env": {
-        "ANTHROPIC_AUTH_TOKEN": "YOUR_API_KEY",
+        "ANTHROPIC_AUTH_TOKEN": "sk-08ffe8b4c2ef4b8a9dea685301ffbeaf",
         "ANTHROPIC_BASE_URL": "https://dashscope.aliyuncs.com/apps/anthropic",
         "ANTHROPIC_MODEL": "qwen3.7-max",
         "ANTHROPIC_DEFAULT_HAIKU_MODEL": "qwen3.6-flash",
