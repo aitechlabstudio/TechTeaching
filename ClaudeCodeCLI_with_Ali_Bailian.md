@@ -84,7 +84,19 @@ New-Item -ItemType Directory -Path "$env:USERPROFILE\.claude" -Force | Out-Null
 ```powershell
 notepad C:\Users\<用户名>\.claude\settings.json
 ```
-
+```
+{
+    "env": {
+        "ANTHROPIC_AUTH_TOKEN": "sk-08ffe8b4c2ef4b8a9dea685301ffbeaf",
+        "ANTHROPIC_BASE_URL": "https://dashscope.aliyuncs.com/apps/anthropic",
+        "ANTHROPIC_MODEL": "qwen3.7-max",
+        "ANTHROPIC_DEFAULT_HAIKU_MODEL": "qwen3.6-flash",
+        "ANTHROPIC_DEFAULT_SONNET_MODEL": "qwen3.7-max",
+        "ANTHROPIC_DEFAULT_OPUS_MODEL": "qwen3.7-max",
+        "CLAUDE_CODE_SUBAGENT_MODEL": "qwen3.7-max"
+    }
+}
+```
 ### 说明
 
 - 默认模型为 `qwen3.7-max`，可替换为其他 100+ 个免费模型，例如 `deepseek-v3`
