@@ -75,7 +75,7 @@ New-Item -ItemType Directory -Path "$env:USERPROFILE\.codex" -Force | Out-Null
 @'
 model_provider = "openrouter"
 model_reasoning_effort = "high"
-model="~openai/gpt-latest"
+model="poolside/laguna-m.1:free"
 
 [model_providers.openrouter]
 name = "openrouter"
@@ -95,7 +95,7 @@ notepad "$env:USERPROFILE\.codex\config.toml"
 ```toml
 model_provider = "openrouter"
 model_reasoning_effort = "high"
-model="~openai/gpt-latest"
+model="poolside/laguna-m.1:free"
 
 [model_providers.openrouter]
 name = "openrouter"
