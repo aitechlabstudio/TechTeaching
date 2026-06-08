@@ -188,32 +188,16 @@ trust_level = "untrusted"
 - **自动故障转移**：某个提供商不可用时自动切换，保证编码会话不中断
 - **用量可视化**：在 [OpenRouter Activity Dashboard](https://openrouter.ai/activity) 实时查看 token 消耗和费用
 - **隐私保护**：默认不记录源代码内容，除非主动开启 prompt logging
+## 用阿里百炼 API
+qwen3.7-max、qwen3.7-plus、qwen3.6-plus 和 qwen3.6-flash 支持 Responses API，可使用最新版 Codex。
 
----
+ ```
+model_provider = "Model_Studio_Token_Plan"
+model = "qwen3.7-max"
+[model_providers.Model_Studio_Token_Plan]
+name = "Model_Studio_Token_Plan"
+base_url = "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+env_key = "OPENAI_API_KEY"
+wire_api = "responses"
 
-## 常见问题
-
-**认证失败（Auth Error）**
-- 检查 `OPENROUTER_API_KEY` 是否已正确设置
-- 前往 [openrouter.ai/keys](https://openrouter.ai/keys) 验证 Key 是否有效
-- Windows 用户：确认用的是永久设置方式，而不是仅当前会话有效
-
-**模型找不到（Model Not Found）**
-- 在 [openrouter.ai/models](https://openrouter.ai/models) 确认模型 ID 格式
-- 格式示例：`~openai/gpt-latest`、`~anthropic/claude-sonnet-latest`
-
-**Windows：`codex` 命令找不到**
-- 重新打开 PowerShell 窗口后再试
-- 用 npm 安装的，确认 npm 全局路径已加入系统 PATH：`npm config get prefix`
-
-**Windows：安装了 `codex` 但无法运行**
-- 确认安装的是 `@openai/codex` 而非 `codex`，两者完全不同
-
----
-
-## 参考链接
-
-- [Codex CLI GitHub 仓库](https://github.com/openai/codex)
-- [OpenRouter 官方文档 - Codex CLI 集成](https://openrouter.ai/docs/guides/coding-agents/codex-cli)
-- [OpenRouter 模型列表](https://openrouter.ai/models?q=codex)
-- [OpenRouter Activity Dashboard](https://openrouter.ai/activity)
+```
