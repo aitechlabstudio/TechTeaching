@@ -189,15 +189,14 @@ trust_level = "untrusted"
 - **用量可视化**：在 [OpenRouter Activity Dashboard](https://openrouter.ai/activity) 实时查看 token 消耗和费用
 - **隐私保护**：默认不记录源代码内容，除非主动开启 prompt logging
 ## 用阿里百炼 API
-qwen3.7-max、qwen3.7-plus、qwen3.6-plus 和 qwen3.6-flash 支持 Responses API，可使用最新版 Codex。
+适用于支持 OpenAI Responses API 的模型（如 qwen3.7-max），可使用最新版 Codex。
 
  ```
-model_provider = "Model_Studio_Token_Plan"
+model_provider = "Model_Studio"
 model = "qwen3.7-max"
-[model_providers.Model_Studio_Token_Plan]
-name = "Model_Studio_Token_Plan"
-base_url = "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+[model_providers.Model_Studio]
+name = "Model_Studio"
+base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 env_key = "OPENAI_API_KEY"
 wire_api = "responses"
-
 ```
