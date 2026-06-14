@@ -1,13 +1,12 @@
 # Codex CLI 接入 阿里百炼API 免费使用每个模型100 万个 token 
 
-> 免费使用 Codex CLI · 100+ 模型 · 每个模型 100 万 token 免费额度
 
 阿里百炼为每个模型免费提供了 100 万额度的 token，总共有 100 多个模型可以使用。本教程介绍如何将 Codex CLI 接入阿里百炼的 API，从而免费使用 Codex 的 CLI 模式。
 
-> **注意：** 最新版 Codex 要求模型支持 Responses API，以下模型可直接使用：
-> `qwen3.7-max`、`qwen3.7-plus`、`qwen3.6-plus`、`qwen3.6-flash`
+> **注意：** 最新版 Codex 要求模型支持 Responses API，以下模型可直接使用：  
+> `qwen3.7-max`、`qwen3.7-plus`、`qwen3.6-plus`、`qwen3.6-flash`  
 >
-> 其他模型需通过 Chat/Completions API 接入，需安装旧版本 Codex（如 `0.80.0`）。
+> 其他模型需通过 Chat/Completions API 接入，需安装旧版本 Codex（如 `0.80.0`）。  
 
 ---
 
