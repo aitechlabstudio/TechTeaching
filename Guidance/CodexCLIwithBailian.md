@@ -1,4 +1,4 @@
-# Codex CLI × 阿里百炼
+# Codex CLI 接入 阿里百炼API 免费使用每个模型100 万个 token 
 
 > 免费使用 Codex CLI · 100+ 模型 · 每个模型 100 万 token 免费额度
 
