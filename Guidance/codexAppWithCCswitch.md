@@ -1,12 +1,12 @@
 # Codex 桌面 App 接入国产模型教程
 
-> 阿里百炼 100 万 token 免费额度 
-> 字节火山引擎  · 每个模型每天最多 200 万 token 免费额度
+> 阿里百炼：每个模型 **100 万 token** 免费额度
+> 字节火山引擎 ARK：每个模型每天最多 **200 万 token** 免费额度
 
 本教程介绍两种方法将 Codex 桌面 App 接入国产大模型，免费使用百万 token 额度。
 
-- **方法一：直接修改配置文件**——适合兼容 OpenAI 格式的模型（如阿里百炼）
-- **方法二：使用 CC-Switch**——适合所有模型，包括不兼容 OpenAI 格式的模型（如 DeepSeek）
+- **方法一：直接修改配置文件** — 适合兼容 OpenAI 格式的模型（如阿里百炼）
+- **方法二：使用 CC-Switch** — 适合所有模型，包括不兼容 OpenAI 格式的模型（如 DeepSeek）
 
 > 教程链接及各平台注册入口见评论区 GitHub 链接，可一键复制命令。
 
@@ -20,23 +20,23 @@
 
 ## 方法一：直接修改配置文件
 
-适合模型：阿里百炼 `qwen3.7-max`、`qwen3.7-plus`、`qwen3.6-plus`、`qwen3.6-flash`
+适合模型：`qwen3.7-max`、`qwen3.7-plus`、`qwen3.6-plus`、`qwen3.6-flash`
 
 这些模型兼容 OpenAI 格式，只需修改配置文件即可直接使用。
 
-### 1. 启动 Codex
-修改登录认证方法
+### 1. 启动 Codex，修改登录认证方式
 
-打开 Codex 桌面 App
+打开 Codex 桌面 App。
+
 ### 2. 开通百炼，获取 API Key
 
 1. 打开 [bailian.aliyun.com](https://bailian.aliyun.com)
 2. 用手机号登录阿里云账号
 3. 首次进入会提示开通百炼服务，点「开通」（免费）
 4. 首页找到「API Key 管理」，点「创建 API Key」
-5. **立即复制保存**，API Key 只显示一次
+5. **立即复制保存，API Key 只显示一次**
 
-> ⚠️ 注意：只有**华北区**有每个模型 100 万 token 的免费额度，新加坡和美国区没有。华北、新加坡、美国的 API 各自独立，不可互用。
+> ⚠️ 只有**华北区**有每个模型 100 万 token 的免费额度，新加坡和美国区没有。华北、新加坡、美国的 API 各自独立，不可互用。
 
 ### 3. 修改配置文件
 
@@ -51,7 +51,7 @@ Codex 配置文件路径：
 notepad "$env:USERPROFILE\.codex\config.toml"
 ```
 
-写入内容如下，只需修改 `model` 为你想使用的模型：
+写入以下内容，只需修改 `model` 为你想使用的模型：
 
 ```toml
 model_provider = "Model_Studio"
@@ -62,10 +62,9 @@ name = "Model_Studio"
 base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 env_key = "OPENAI_API_KEY"
 wire_api = "responses"
-
 ```
 
-支持的模型（需要 Responses API，最新版 Codex 可直接使用）：
+支持的模型（最新版 Codex，需支持 Responses API）：
 
 | 模型 ID | 说明 |
 |---|---|
@@ -77,6 +76,8 @@ wire_api = "responses"
 > 其他模型（如 DeepSeek）不兼容 OpenAI 格式，请使用下方**方法二**。
 
 ### 4. 设置 API Key 环境变量
+
+将 `你的百炼APIKey` 替换为第二步获取的 API Key。
 
 **Windows PowerShell（永久生效，推荐）：**
 
@@ -107,17 +108,15 @@ echo $env:OPENAI_API_KEY
 
 输出你的 Key 说明设置成功。
 
-
 ---
 
 ## 方法二：使用 CC-Switch
 
-CC-Switch 是一个代理工具，可以将任意模型的 API 转换为 OpenAI 兼容格式，适合 DeepSeek 等不直接兼容的模型，也同样支持兼容openAI的格式的模型
-
+CC-Switch 是一个代理工具，可以将任意模型的 API 转换为 OpenAI 兼容格式，适合 DeepSeek 等不直接兼容的模型，也同样支持兼容 OpenAI 格式的模型。
 
 ### 1. 下载 CC-Switch
 
-前往 GitHub Releases 页面下载：https://github.com/farion1231/cc-switch/releases
+前往 GitHub Releases 页面：https://github.com/farion1231/cc-switch/releases
 
 页面较长，搜索 **Assets**，找到：
 
@@ -125,44 +124,50 @@ CC-Switch 是一个代理工具，可以将任意模型的 API 转换为 OpenAI 
 Windows-Portable.zip
 ```
 
-下载免安装的压缩包，解压即可直接使用，无需安装。
+下载免安装压缩包，解压即可直接使用，无需安装。
 
 ### 2. 启动 CC-Switch
+
+解压后打开 CC-Switch 程序。
 
 ### 3. 开通火山引擎 ARK，获取免费额度
 
 1. 打开火山引擎 ARK：https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey
 2. 登录或注册账号
-3. 按照以下步骤领取免费 token：
+3. 找到「开通管理」，按以下步骤操作：
 
-找到开通管理然后
 **步骤一：授权模型及接入点**
 进入「模型授权」页面，授权你要使用的模型。只有通过授权的接入点调用，数据才会被采集并产生奖励。
 
 **步骤二：调用模型产生用量**
 通过授权的接入点调用模型，每日用量会按模型维度累积，**次日 11 点后**获得对应用量的奖励资源包（有效期 30 天）。
 
+4. 在控制台「API Key 管理」页面创建并复制 Key
 
-4. 获取 API Key：在控制台 API Key 管理页面创建并复制 Key
+### 4. 在 CC-Switch 中配置 ARK API Key
 
-
+打开 CC-Switch，填入火山引擎 ARK 的 API Key，选择要使用的模型，启动代理服务。
 
 ### 5. 重新启动 Codex
 
-确保 CC-Switch 正在运行，然后打开 Codex 桌面 App 或运行：
-
-```powershell
-codex
-```
+确保 CC-Switch 正在运行，然后打开 Codex 桌面 App 即可使用。
 
 ---
 
 ## 两种方法对比
 
-| | 方法一：直接接入百炼 | 方法二：CC-Switch |
+| | 方法一：直接修改配置文件 | 方法二：CC-Switch |
 |---|---|---|
 | 配置难度 | 简单 | 稍复杂 |
 | 支持模型 | 仅兼容 OpenAI 格式的模型 | 所有模型，包括 DeepSeek |
-| 免费额度 | 阿里百炼每模型 100 万 token | 火山引擎 ARK 按用量返还 |
+| 免费额度 | 阿里百炼每模型 100 万 token | 火山引擎 ARK 每模型每天最多 200 万 token |
 | 推荐场景 | 日常编码，快速上手 | 需要使用 DeepSeek 等模型 |
 
+---
+
+## 参考链接
+
+- [Codex 官网](https://chatgpt.com/zh-Hans-CN/codex/)
+- [阿里百炼官网](https://bailian.aliyun.com)
+- [火山引擎 ARK 控制台](https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey)
+- [CC-Switch GitHub](https://github.com/farion1231/cc-switch/releases)
