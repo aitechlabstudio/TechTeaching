@@ -48,9 +48,10 @@ Codex 配置文件路径：
 - **Windows**：`C:\Users\<用户名>\.codex\config.toml`
 - **macOS / Linux**：`~/.codex/config.toml`
 
-**Windows 用记事本打开：**
+**先备份配置文件再Windows 用记事本打开：**
 
 ```powershell
+cp  "$env:USERPROFILE\.codex\config.toml" "$env:USERPROFILE\.codex\config.toml.bak"
 notepad "$env:USERPROFILE\.codex\config.toml"
 ```
 
