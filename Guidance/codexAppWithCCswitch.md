@@ -28,7 +28,10 @@
 
 ### 2. 开通百炼，获取 API Key
 
-1. 打开 [bailian.aliyun.com](https://bailian.aliyun.com)
+1. 打开阿里百炼的官网
+```
+https://bailian.aliyun.com
+```
 2. 用手机号登录阿里云账号
 3. 首次进入会提示开通百炼服务，点「开通」（免费）
 4. 首页找到「API Key 管理」，点「创建 API Key」
