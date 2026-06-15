@@ -166,9 +166,4 @@ Windows-Portable.zip
 ```
 https://github.com/BigPizzaV3/CodexPlusPlus/releases
 ````
-
-
-- [Codex 官网](https://chatgpt.com/zh-Hans-CN/codex/)
-- [阿里百炼官网](https://bailian.aliyun.com)
-- [火山引擎 控制台](https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey)
-- [CC-Switch GitHub](https://github.com/farion1231/cc-switch/releases)
+打开Codex++ 管理工具进行配置，不要直接打开codex ++
