@@ -13,7 +13,9 @@
 ## 前提条件：下载并安装Codex 桌面 App
 
 前往官网下载安装：https://chatgpt.com/zh-Hans-CN/codex/
-
+```
+https://chatgpt.com/zh-Hans-CN/codex/
+```
 ---
 
 ## 方法一：直接修改配置文件
