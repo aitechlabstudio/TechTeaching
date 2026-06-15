@@ -154,6 +154,8 @@ Windows-Portable.zip
 确保 CC-Switch 正在运行，然后打开 Codex 桌面 App 即可使用。
 
 ---
+### 第三种办法使用codex ++
+https://github.com/BigPizzaV3/CodexPlusPlus/releases
 
 ## 两种方法对比
 
