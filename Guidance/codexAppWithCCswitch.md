@@ -70,7 +70,7 @@ env_key = "OPENAI_API_KEY"
 wire_api = "responses"
 ```
 
-支持的模型（最新版 Codex，需支持 Responses API）：
+最新版 Codex，需支持 Responses API, 支持这种方式的模型有qwen.3.6 和qwen3.7以及他们的子版本，例如：
 
 | 模型 ID | 说明 |
 |---|---|
