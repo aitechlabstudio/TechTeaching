@@ -52,6 +52,8 @@ Codex 配置文件路径：
 
 ```powershell
 cp  "$env:USERPROFILE\.codex\config.toml" "$env:USERPROFILE\.codex\config.toml.bak"
+```
+```powershell
 notepad "$env:USERPROFILE\.codex\config.toml"
 ```
 
