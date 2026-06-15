@@ -1,7 +1,7 @@
 # Codex 桌面 App 接入国产模型教程
 
-> 阿里百炼：每个模型 **100 万 token** 免费额度
-> 字节火山引擎 ARK：每个模型每天最多 **200 万 token** 免费额度
+> 阿里百炼：每个模型 **100 万 token** 免费额度   
+> 字节火山引擎：每个模型每天最多 **200 万 token** 免费额度
 
 本教程介绍两种方法将 Codex 桌面 App 接入国产大模型，免费使用百万 token 额度。
 
@@ -130,9 +130,9 @@ Windows-Portable.zip
 
 解压后打开 CC-Switch 程序。
 
-### 3. 开通火山引擎 ARK，获取免费额度
+### 3. 开通火山引擎，获取免费额度
 
-1. 打开火山引擎 ARK：https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey
+1. 打开火山引擎：https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey
 2. 登录或注册账号
 3. 找到「开通管理」，按以下步骤操作：
 
@@ -144,9 +144,9 @@ Windows-Portable.zip
 
 4. 在控制台「API Key 管理」页面创建并复制 Key
 
-### 4. 在 CC-Switch 中配置 ARK API Key
+### 4. 在 CC-Switch 中配置
 
-打开 CC-Switch，填入火山引擎 ARK 的 API Key，选择要使用的模型，启动代理服务。
+打开 CC-Switch，填入火山引擎 的 API Key，选择要使用的模型，启动代理服务。CC-Switch 会自动处理认证，无需单独设置环境变量。
 
 ### 5. 重新启动 Codex
 
@@ -160,7 +160,7 @@ Windows-Portable.zip
 |---|---|---|
 | 配置难度 | 简单 | 稍复杂 |
 | 支持模型 | 仅兼容 OpenAI 格式的模型 | 所有模型，包括 DeepSeek |
-| 免费额度 | 阿里百炼每模型 100 万 token | 火山引擎 ARK 每模型每天最多 200 万 token |
+| 免费额度 | 阿里百炼每模型 100 万 token | 火山引擎 每模型每天最多 200 万 token |
 | 推荐场景 | 日常编码，快速上手 | 需要使用 DeepSeek 等模型 |
 
 ---
@@ -169,5 +169,5 @@ Windows-Portable.zip
 
 - [Codex 官网](https://chatgpt.com/zh-Hans-CN/codex/)
 - [阿里百炼官网](https://bailian.aliyun.com)
-- [火山引擎 ARK 控制台](https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey)
+- [火山引擎 控制台](https://console.volcengine.com/ark/region:ark+cn-beijing/apiKey)
 - [CC-Switch GitHub](https://github.com/farion1231/cc-switch/releases)
