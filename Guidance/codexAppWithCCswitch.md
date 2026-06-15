@@ -10,7 +10,7 @@
 
 ---
 
-## 第一步：下载 Codex 桌面 App
+## 前提条件：下载 Codex 桌面 App
 
 前往官网下载安装：https://chatgpt.com/zh-Hans-CN/codex/
 
