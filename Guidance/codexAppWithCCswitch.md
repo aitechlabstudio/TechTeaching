@@ -107,6 +107,7 @@ echo $env:OPENAI_API_KEY
 输出你的 Key 说明设置成功。
 
 ---
+### 4. 重启Codex App
 
 ## 方法二：使用 CC-Switch
 
@@ -124,7 +125,7 @@ Windows-Portable.zip
 
 下载免安装压缩包，解压即可直接使用，无需安装。
 
-### 2. 启动 CC-Switch
+### 2. 启动 CC-Switch 并配置
 
 解压后打开 CC-Switch 程序。
 
@@ -142,11 +143,8 @@ Windows-Portable.zip
 
 4. 在控制台「API Key 管理」页面创建并复制 Key
 
-### 4. 在 CC-Switch 中配置
 
-打开 CC-Switch，填入火山引擎 的 API Key，选择要使用的模型，启动代理服务。CC-Switch 会自动处理认证，无需单独设置环境变量。
-
-### 5. 重新启动 Codex
+### 4. 重新启动 Codex
 
 确保 CC-Switch 正在运行，然后打开 Codex 桌面 App 即可使用。
 
