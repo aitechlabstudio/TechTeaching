@@ -26,7 +26,8 @@ API 平台：
 https://platform.agnes-ai.com/
 ```
 
-> 注意： 网页版账号和 API 平台账号需要分别注册。   
+注意： 网页版账号和 API 平台账号需要分别注册。   
+
 ---
 ## 1. 接入 Agnes Claude Code 等智能体
 
