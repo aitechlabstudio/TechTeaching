@@ -12,6 +12,14 @@
 | agnes-image-2.1-flash | 图片生成（最新版） |
 | agnes-video-v2.0      | 视频生成      |
 
+文本模型 Agnes-2.0-Flash 目前在 Claw-Eval 榜单排第 9 名。
+Claw-Eval 不是传统的数学、知识问答、代码类刷题榜单。它测试的是模型在真实 Agent 场景中的综合执行能力。可以说是「最接近 AI Agent 实战能力」的评测之一。
+
+图像模型 Agnes-Image-2.0-Flash 目前在第三方测评机构 Artificial Analysis 的图片编辑榜单排第 19 名。
+视频模型 Agnes-Video-V2.0 同样进入了 Artificial Analysis 视频（带音频）榜单。
+
+并且，支持原生音画同出。意味着你不需要单独配音，Agnes 直接一步到位。
+
 对于内容创作者来说，最有价值的是图片和视频模型。
 
 ---
@@ -90,32 +98,20 @@ api key 已经在 .env 文件里。
 ## 文本生成图片
 
 ```bash
-python scripts/agnes_image.py \
-  --version 2.1 \
-  --prompt "梦幻般的森林，阳光透过树叶洒下，小鹿在溪边饮水，宫崎骏动画风格，柔和的色彩，高清细节" \
-  --output outputs/text-to-image-test.png \
-  --size 1024x768
+python scripts/agnes_image.py --version 2.1 --prompt "穿粉色牛仔裙的白色小猫，3D 真实电影风格，柔和自然光，浅景深，毛发细节清晰，背景咖啡店露台" --output outputs/cat.png --size 1024x768
+
 ```
 
 ## 图片生成图片
 
 ```bash
-python scripts/agnes_image.py \
-  --version 2.1 \
-  --prompt "将图片转换为梵高油画风格，星月夜色调，厚重的笔触，强烈的色彩对比" \
-  --image input/1.png \
-  --output outputs/image-to-image-test.png \
-  --size 1024x768
+python scripts/agnes_image.py --version 2.1 --prompt "将图片里小猫穿的裙子改成蓝色牛仔裙，其他不变。" --image "input/cat.png" --output outputs/catinjeans.png --size 1024x768
 ```
 
 ## 文本生成视频
 
 ```bash
-python scripts/agnes_video.py \
-  --prompt "复古胶片风格，1986年世界杯马拉多纳上帝之手经典瞬间，球场观众沸腾，黑白渐变色彩，颗粒质感，电影镜头感，slow motion" \
-  --num-frames 81 \
-  --frame-rate 24 \
-  --output outputs/world-cup-retro.mp4
+python scripts/agnes_video.py --prompt "亚洲女性模特在白色摄影棚中展示黑色连衣裙，从全景缓缓切到半身特写，模特自然转身，有轻柔背景音乐" --num-frames 121 --frame-rate 24 --output outputs/aisionmodel.mp4
 ```
 
 ---
