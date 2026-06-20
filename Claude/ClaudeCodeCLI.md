@@ -1,6 +1,8 @@
 # 将Claude Code 接入阿里百炼API，免费使用每个模型100万的token
 
-阿里百炼为每个模型免费提供了 100 万额度的 token，总共有 100 多个模型可以使用。本教程介绍如何将 Claude Code 接入阿里百炼的 API，从而免费使用 Claude Code 的 CLI 模式（即 Terminal / CLI 模式，非桌面 App 模式）。
+阿里百炼为每个模型免费提供了 100 万额度的 token，总共有 100 多个模型可以使用。  
+本教程介绍如何将 Claude Code 接入阿里百炼的 API，从而免费使用 Claude Code 的 CLI 模式  
+（即 Terminal / CLI 模式，非桌面 App 模式）。
 
 ---
 
