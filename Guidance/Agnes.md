@@ -17,20 +17,12 @@
 ---
 
 ## 注册 Agnes 账号获取API Key
-官网地址如下。 网页版可以直接聊天、生成图片和视频。
+官网地址如下, 注意： 网页版账号和 API 平台账号需要分别注册。   
 ```text
 https://agnes-ai.com/
 ```
-API 平台：
-```text
-https://platform.agnes-ai.com/
-```
-
-注意： 网页版账号和 API 平台账号需要分别注册。   
-
 ---
-## 1. 接入 Agnes Claude Code 等智能体
-
+## 使用方法一： 接入 Agnes Claude Code 等智能体
 * 安装 Claude Desktop
 ```text
 https://claude.com/download
@@ -56,7 +48,7 @@ Haiku -> agnes-2.0-flash
 * 个人不太推荐直接把 Agnes 当 Claude Code 的主模型； 响应速度偏慢，编码体验一般
 ---
 
-## 2. Claude Code 调用图片和视频模型
+## 使用方法二：Claude Code 调用图片和视频模型
 
 ---
 
@@ -94,7 +86,7 @@ api key 已经在 .env 文件里。
 第一人称球迷视角，世界杯决赛现场，手持摄像机晃动效果，周围球迷疯狂庆祝，举杯欢呼，烟火表演，真实现场音效氛围
 ```
 ---
-## 3. 直接使用 Python
+## 使用方法三：直接使用 Python
 ## 文本生成图片
 
 ```bash
@@ -104,8 +96,6 @@ python scripts/agnes_image.py \
   --output outputs/text-to-image-test.png \
   --size 1024x768
 ```
-
----
 
 ## 图片生成图片
 
@@ -118,9 +108,7 @@ python scripts/agnes_image.py \
   --size 1024x768
 ```
 
----
-
-## 生成视频
+## 文本生成视频
 
 ```bash
 python scripts/agnes_video.py \
