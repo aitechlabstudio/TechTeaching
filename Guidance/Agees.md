@@ -1,12 +1,8 @@
 # Agnes AI 免费图片视频 API 教程
-
-免费生成图片、视频，支持 Claude Code、Codex、Cursor 和 Python 自动化调用。
-
+> 利用Agnes 提供的免费API生成图片、视频，支持 Claude Code、Codex、Cursor 和 Python 自动化调用。
 ---
-
 ## 什么是 Agnes AI
-
-Agnes AI 最近开放了免费的图片、视频和文本 API。
+> Agnes AI 是新加坡本土模型公司。他的模型家族专为 OpenClaw、Hermes 等智能体工具而生。同时提供文生图、图生图与图生视频等能力，呈现电影级画面与同步音画生成，并兼顾高速表现——让你顺畅完成 AI 内容的创作、转化与部署。
 
 目前提供的主要模型：
 
@@ -21,37 +17,22 @@ Agnes AI 最近开放了免费的图片、视频和文本 API。
 
 ---
 
-## 注册 Agnes
-
-官网：
-
+# 步骤一 注册 Agnes 账号获取API Key
+官网地址如下。 网页版可以直接聊天、生成图片和视频。
 ```text
 https://agnes-ai.com/
 ```
-
-网页版可以直接聊天、生成图片和视频。
-
 API 平台：
-
 ```text
 https://platform.agnes-ai.com/
 ```
-
-注意： 网页版账号和 API 平台账号需要分别注册。
-
----
-
-
-
-## API 地址
-
+注意： 网页版账号和 API 平台账号需要分别注册。   
+#### API 地址 BASE URL 
 ```text
 https://apihub.agnes-ai.com/v1
 ```
-
 ---
-
-# 方法一：Claude Desktop 接入 Agnes
+# 步骤二：接入 Agnes Claude Code 等智能体
 
 ## 安装 Claude Desktop
 
@@ -94,18 +75,17 @@ Opus -> agnes-2.0-flash
 Haiku -> agnes-2.0-flash
 ```
 
-保存即可使用。
+个人不太推荐直接把 Agnes 当 Claude Code 的主模型。  
 
+实际测试下来： 
+
+* 响应速度偏慢
+* 编码体验一般
 ---
 
 # 方法二：Claude Code 调用图片和视频模型
 
-个人不太推荐直接把 Agnes 当 Claude Code 的主模型。
 
-实际测试下来：
-
-* 响应速度偏慢
-* 编码体验一般
 
 所以我的方案是：
 
