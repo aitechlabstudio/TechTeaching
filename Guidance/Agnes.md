@@ -62,8 +62,8 @@ Haiku -> agnes-2.0-flash
 
 ### 准备工作
 
-* 下载并解压 Skill 压缩包。
-  blob:https://github.com/57601610-8762-4c6e-ac76-2dc3b849040c
+* 下载并解压 Skill 压缩包， 地址：   
+https://github.com/aitechlabstudio/TechTeaching/raw/main/Guidance/agnes-image-video.zip
 * 打开 Claude Code。
 * 将 Skill 所在目录设置为工作目录。
 ---
