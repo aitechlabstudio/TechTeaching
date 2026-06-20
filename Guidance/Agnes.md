@@ -16,7 +16,7 @@
 
 ---
 
-## 步骤一 注册 Agnes 账号获取API Key
+## 注册 Agnes 账号获取API Key
 官网地址如下。 网页版可以直接聊天、生成图片和视频。
 ```text
 https://agnes-ai.com/
@@ -25,7 +25,7 @@ API 平台：
 ```text
 https://platform.agnes-ai.com/
 ```
-注意： 网页版账号和 API 平台账号需要分别注册。   
+> 注意： 网页版账号和 API 平台账号需要分别注册。   
 ---
 ## 1. 接入 Agnes Claude Code 等智能体
 
