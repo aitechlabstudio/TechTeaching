@@ -2,20 +2,20 @@
 
 ## 1. 下载程序
 
-请先下载并解压本项目的压缩包（ImageGen 程序）。   
+下载并解压 ImageGen 程序压缩包。
 https://drive.google.com/file/d/1I-KFUHHIAQN-ZTizlrpMHwx6fYG-Lqtl/view?usp=sharing
 
 ---
 
-## 2. 安装 Python 3.11（仅需一次）
+## 2. 安装 Python 3.11（仅需一次）。 必须是这个版本，最新版的不支持
 
 ### 方法一：官网下载
 
 https://www.python.org/downloads/release/python-31113/
 
-### 方法二：使用 winget 安装（推荐）
+### 方法二：winget 安装
 
-```bash id="1a9k3x"
+```bash id="p1"
 winget install Python.Python.3.11
 ```
 
@@ -23,9 +23,9 @@ winget install Python.Python.3.11
 
 ## 3. 创建并激活虚拟环境
 
-每次运行程序前需要执行一次（在项目目录中运行）：
+每次运行前执行：
 
-```bash id="v2k9q1"
+```bash id="p2"
 py -3.11 -m venv .venv
 .venv\Scripts\activate
 ```
@@ -34,120 +34,106 @@ py -3.11 -m venv .venv
 
 ## 4. 安装 Python 依赖库（仅需一次）
 
-```bash id="p7x3ld"
+```bash id="p3"
 pip install selenium undetected-chromedriver pyperclip
 ```
 
 ---
 
-## 5. 防止程序中断（重要）
+## 5. 使用程序生成图片（核心步骤）
 
-如果需要无人值守运行，请确保电脑不会进入睡眠状态，否则下载会中断。
+完成依赖安装后，直接运行程序即可开始生成图片。
 
-### 方法一：关闭睡眠模式（推荐）
+程序会自动执行以下流程：
 
-Windows 设置：
-
-* 设置 → 电源与睡眠 → 睡眠 → 设为“从不”
+* 读取配置文件 `configs.json`
+* 读取 Prompt 文件
+* 打开 Chrome 并访问目标网站
+* 自动输入提示词生成图片
+* 下载图片到本地目录
 
 ---
 
-### 方法二：使用 AutoHotkey 保持唤醒
+## ⚙️ 关键配置说明（configs.json）
 
-下载地址：
+配置文件路径：
+
+```
+ImageGen\input\configs\configs.json
+```
+
+### 重要参数说明：
+
+* `CHROME_USER_DATA_DIR`
+  Chrome 用户数据目录，用于保存登录状态与 Cookie
+  👉 路径：`C:\ImageGen\chrome-data`
+
+* `INPUT_FILE`
+  提示词文件路径
+  👉 `input\prompts\image_prompts.txt`
+
+* `START_LINE`
+  从第几行开始执行（从 1 开始）
+
+* `START_IMAGE_NUMBER`
+  图片编号起始值，用于避免覆盖已有图片
+
+---
+
+## 💡 提示词文件说明
+
+路径：
+
+```
+input\prompts\image_prompts.txt
+```
+
+规则：
+
+* 每一行是一个 Prompt
+* 程序按顺序逐行生成图片
+* 可通过 `START_LINE` 控制从哪一行开始
+
+---
+
+## 🛑 防止程序中断（重要）
+
+如果需要无人值守运行：
+
+### 方法一（推荐）
+
+关闭睡眠模式：
+
+* Windows 设置 → 电源与睡眠 → 设为“从不”
+
+### 方法二（可选）
+
+使用 AutoHotkey：
 
 https://www.autohotkey.com/
 
-可以使用脚本每分钟模拟一次鼠标活动，从而保持窗口活跃，防止系统进入待机状态。
+每分钟模拟一次鼠标操作，防止系统进入待机。
 
 ---
 
-## 6. 程序目录说明
+## 📁 程序运行结果
 
-### 📁 C:\ImageGen\chrome-data
+生成的图片会自动保存到：
 
-Chrome 浏览器用户数据目录，用于保存：
-
-* 登录状态
-* Cookie
-* 浏览器配置
-
-#### ⚠️ 常见问题处理
-
-如果出现以下情况，可以删除该目录：
-
-* 无法访问目标网站
-* 登录失效
-* 页面加载异常
-* 浏览器异常
-
-程序会在下次启动时自动重新创建。
-
----
-
-### 📁 C:\ImageGen\Download
-
-图片下载目录：
-
-* 所有生成的图片都会保存到这里
-* 如果目录不存在会自动创建
-
----
-
-### 📁 ImageGen\input\configs\configs.json
-
-程序配置文件路径
-
----
-
-## 7. 配置文件说明（configs.json）
-
-```jsonc id="c8m2kq"
-{
-    // AI 图片生成网页地址（通常无需修改）
-    "TARGET_URL": "https://labs.google/fx/tools/flow",
-
-    // Chrome 浏览器路径
-    "CHROME_BINARY_PATH": "Chrome\\chrome-win64\\chrome.exe",
-
-    // ChromeDriver 路径（需与 Chrome 版本匹配）
-    "CHROME_DRIVER_PATH": "Chrome\\chromedriver-win64\\chromedriver.exe",
-
-    // Chrome 主版本号
-    "CHROME_VERSION_MAIN": 149,
-
-    // Chrome 用户数据目录（保存登录信息）
-    "CHROME_USER_DATA_DIR": "C:\\ImageGen\\chrome-data",
-
-    // 输入提示词文件
-    "INPUT_FILE": "input\\prompts\\image_prompts.txt",
-
-    // 从第几行开始执行（从 1 开始）
-    "START_LINE": 2,
-
-    // 图片编号起始值（避免覆盖旧图片）
-    "START_IMAGE_NUMBER": 2
-}
+```
+C:\ImageGen\Download
 ```
 
+如果目录不存在会自动创建。
+
 ---
 
-## 8. 使用流程总结
+## ⚡ 使用流程总结
 
 1. 解压程序
 2. 安装 Python 3.11
 3. 创建虚拟环境
 4. 安装依赖
-5. 修改 configs.json（如需要）
-6. 运行程序
-7. 图片自动下载到 `C:\ImageGen\Download`
-
----
-
-## 9. 总结
-
-* Python 只需安装一次
-* 依赖库只需安装一次
-* 虚拟环境每次运行都要激活
-* 下载目录自动创建
-* Chrome 数据异常可删除 `chrome-data`
+5. 配置 `configs.json`
+6. 编辑 Prompt 文件
+7. 运行程序生成图片
