@@ -2,8 +2,9 @@
 
 ## 1. 下载程序
 
-请先下载并解压本项目的压缩包（ImageGen 程序）。
+请先下载并解压本项目的压缩包（ImageGen 程序）。   
 https://drive.google.com/file/d/1I-KFUHHIAQN-ZTizlrpMHwx6fYG-Lqtl/view?usp=sharing
+
 ---
 
 ## 2. 安装 Python 3.11（仅需一次）
