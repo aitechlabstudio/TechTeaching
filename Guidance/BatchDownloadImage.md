@@ -53,7 +53,12 @@ pip install selenium undetected-chromedriver pyperclip
 * 下载图片到本地目录
 
 ---
+## ⚙️ Google Flow 配置
+必须选择gird，不要选batch
+可以自己选择图片的比例，选择Nano banano   
+设置一次只生成一张图片  
 
+```
 ## ⚙️ 关键配置说明（configs.json）
 
 配置文件路径：
