@@ -54,8 +54,8 @@ pip install selenium undetected-chromedriver pyperclip
 
 ---
 ## ⚙️ Google Flow 配置
-必须选择gird，不要选batch
-可以自己选择图片的比例，选择Nano banano   
+图片布局必须选择batch，不要选grid   
+可以自己选择图片的比例，和模型，比如Nano banana 2.0    
 设置一次只生成一张图片  
 
 
