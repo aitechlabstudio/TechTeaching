@@ -43,7 +43,10 @@ pip install selenium undetected-chromedriver pyperclip
 ## 5. 使用程序生成图片（核心步骤）
 
 完成依赖安装后，直接运行程序即可开始生成图片。
-
+打开命令行窗口，使用cd 命令进入解压缩后所在的目录， 执行命令：
+```
+python .\ImageGen.py
+```
 程序会自动执行以下流程：
 
 * 读取配置文件 `configs.json`
