@@ -9,8 +9,11 @@
 ## 第一步：安装 shadowsocks-libev
 
 ```bash
-sudo apt update
 sudo apt install shadowsocks-libev
+```
+如果提示找不到这个程序，需要执行下面的命令更新apt 再安装
+```bash
+sudo apt update
 ```
 
 ---
