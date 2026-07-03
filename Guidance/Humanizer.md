@@ -237,81 +237,32 @@ Now rewrite the following text in my writing style.
 （AI文章）
 ```
 
-```text
-使用Humanizer-zh skill.
-
-这是我写的两个段落
-
-（粘贴自己的文章）
-按照我的风格，帮我重写下面的文章
-
-（AI文章）
-```
-## 如何确认 Skill 已加载
-
-安装成功并重新启动后，可以输入：
+## 测试：按照我的写作风格重写文章
 
 ```text
-/humanizer
+使用 Humanizer-zh skill。
+
+这是我写的两个段落：
+
+大家在网上找 AI 工具的时候，经常会看到各种宣传，说几分钟就能搞定所有事情。实际用下来，很多工具并没有介绍得那么神奇。我更喜欢自己先试一遍，把踩过的坑整理出来，再分享给大家，这样大家照着做基本都能成功。
+
+我做教程有一个原则，就是尽量简单。能用一条命令解决，就不要写成十几步；能免费完成，就尽量不推荐付费方案。这样即使是第一次接触的新手，也能跟着一步一步完成。
+
+按照我的风格，帮我重写下面的文章：
+
+人工智能正在快速改变我们的工作方式。通过使用先进的大语言模型，用户可以更高效地完成内容创作、代码编写以及数据分析等任务。此外，这些工具还能显著提升工作效率，帮助用户节省大量时间，从而专注于更有价值的工作。然而，在使用 AI 生成内容时，也需要注意生成结果可能存在不准确或缺乏个性化的问题，因此建议用户结合自身经验进行修改和完善。
 ```
-
-如果能够正常进入 Humanizer，而不是提示命令不存在，说明 Skill 已成功安装。
-
-也可以询问 AI：
-
-```text
-What skills are currently installed?
 ```
-
-或者：
-
-```text
-List all installed skills.
-```
-
-如果看到：
-
-```
-Humanizer
-Humanizer-zh
-```
-
-说明 Skill 已正确加载，可以正常使用。
-# 测试案例（中文）
-
-原文：
-
-> 这款软件不仅提升了效率，而且优化了用户体验。此外，它还提供了丰富的功能，使用户能够更加轻松地完成任务。
-
-输入：
-
-```text
-请使用 Humanizer-zh 去掉 AI 味。
-
-这款软件不仅提升了效率，而且优化了用户体验。此外，它还提供了丰富的功能，使用户能够更加轻松地完成任务。
-```
-
-可能输出：
-
-> 新版本把几个常用功能整合到了一起，操作步骤也少了不少，用起来更顺手，大多数任务都能更快完成。
-
----
-
-# 测试案例（英文）
-
-Original：
-
-> This innovative solution not only enhances productivity but also provides a seamless user experience.
-
-输入：
-
-```text
 Use the Humanizer skill.
 
-This innovative solution not only enhances productivity but also provides a seamless user experience.
+Here are two paragraphs written by me:
+
+When I try a new AI tool, I don't just read the documentation. I install it, test it myself, and see where people are likely to get stuck. If something is confusing or doesn't work as expected, I'll figure out a simpler way and include it in my tutorial. That way, people can follow along without wasting time.
+
+I like to keep my guides practical and beginner-friendly. If a task can be done with one command instead of ten, I'll always choose the simpler approach. My goal is to help people get results quickly, not overwhelm them with unnecessary details.
+
+Now rewrite the following text in my writing style:
+
+Artificial intelligence is transforming the way people work by enabling faster content creation, software development, and data analysis. These advanced technologies significantly improve productivity while reducing the time required to complete complex tasks. However, users should carefully review AI-generated content to ensure its accuracy and adapt it to their specific needs before using it in real-world scenarios.
 ```
-
-可能输出：
-
-> The update makes everyday work faster and easier. The interface feels simpler, and users can get things done with fewer steps.
 
