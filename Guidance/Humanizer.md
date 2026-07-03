@@ -220,7 +220,33 @@ Use the Humanizer skill to rewrite the following article.
 AI 会自动调用对应的 Skill。
 
 ---
+# 指定写作风格
+如果希望生成结果更符合自己的写作风格，可以先提供自己写过的文章。
 
+例如：
+
+```text
+Use the Humanizer skill.
+
+Here are two paragraphs written by me:
+
+（粘贴自己的文章）
+
+Now rewrite the following text in my writing style.
+
+（AI文章）
+```
+
+```text
+使用Humanizer-zh skill.
+
+这是我写的两个段落
+
+（粘贴自己的文章）
+按照我的风格，帮我重写下面的文章
+
+（AI文章）
+```
 ## 如何确认 Skill 已加载
 
 安装成功并重新启动后，可以输入：
