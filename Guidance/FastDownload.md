@@ -5,7 +5,7 @@
 ### 1. 安装篡改猴测试版
 Chrome 商店搜索安装 **Tampermonkey Beta**，
 ```
-https://chromewebstore.google.com/category/extensions
+https://chromewebstore.google.com
 ```
 或直接访问：
 ```
