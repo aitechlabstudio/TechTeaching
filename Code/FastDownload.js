@@ -1,7 +1,7 @@
 // ==UserScript==
 // @namespace Tampermonkey
 // @name 网盘下载助手
-// @version 0.0.6
+// @version 1.0
 // @license MIT
 // @homepage http://www.baidu.com
 // @donwloadURL http://www.google.com
