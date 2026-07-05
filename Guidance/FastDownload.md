@@ -24,6 +24,11 @@ https://motrix.app/download
 ```
 https://github.com/aitechlabstudio/TechTeaching/blob/main/Code/FastDownload.js
 ```
+这个脚本是来自于
+```
+http://hd2a.page.gd/assets/min.baidu.user.js
+```
+我做了修改，绕开了打卡充值的步骤，可以直接使用，不需要充值。
 
 安装步骤：点击浏览器右上角篡改猴图标 → **添加新脚本** → 粘贴代码 → `Ctrl+S` 保存。
 
