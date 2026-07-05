@@ -3,7 +3,11 @@
 ## 一、准备工具
 
 ### 1. 安装篡改猴测试版
-Chrome 商店搜索安装 **Tampermonkey Beta**，或直接访问：
+Chrome 商店搜索安装 **Tampermonkey Beta**，
+```
+https://chromewebstore.google.com/category/extensions
+```
+或直接访问：
 ```
 https://chromewebstore.google.com/detail/tampermonkey-beta/gcalenpjmijncebpfijmoaglllgpjagf
 ```
