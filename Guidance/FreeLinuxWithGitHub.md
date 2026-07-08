@@ -4,10 +4,10 @@
 
 ## 第一步：创建 GitHub Codespaces
 
-1. 打开 GitHub 并登录账号
-2. 点击左上角 **☰ 菜单**
-3. 选择 **Codespaces**
-4. 创建一个新的 Codespace
+1. 打开 GitHub 并登录账号: https://github.com/
+3. 点击左上角 **☰ 菜单**
+4. 选择 **Codespaces**
+5. 创建一个新的 Codespace
    - 推荐选择 **Jupyter Notebook**
    - 或者选择 **Blank（空白）模板**
 
