@@ -50,6 +50,13 @@ docker-compose up -d
 
 即可进入 Linux 图形桌面。
 
+## 查看系统的配置
+```bash
+sudo apt update
+sudo apt install fastfetch
+fastfetch
+```
+
 ## 云电脑休眠怎么办？
 
 重新打开 Codespace 后，在终端执行：
