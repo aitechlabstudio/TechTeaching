@@ -41,8 +41,10 @@ irm https://x.ai/cli/install.ps1 | iex
 
 ## 开始体验 Grok 4.5
 
-打开终端后，可以直接输入：
-
+```powershell
+mkdir C:\grok; cd C:\grok
+```
+然后再执行
 ```bash
 grok
 ```
