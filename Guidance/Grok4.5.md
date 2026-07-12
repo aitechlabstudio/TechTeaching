@@ -22,21 +22,6 @@ Grok Build 是 xAI 推出的 AI 编程工具，可以直接在终端中使用 Gr
 
 ## Windows 安装教程
 
-### 第一步：打开 PowerShell
-
-按下：
-
-`Win + X`
-
-然后选择：
-
-- Windows PowerShell
-- Terminal（Windows Terminal）
-
----
-
-### 第二步：运行安装命令
-
 在 PowerShell 中执行：
 
 ```powershell
@@ -52,17 +37,7 @@ irm https://x.ai/cli/install.ps1 | iex
 
 ---
 
-### 第三步：登录账号
 
-安装完成后，根据终端提示：
-
-1. 打开浏览器
-2. 登录你的 xAI 账号
-3. 完成授权
-
-登录成功后，即可开始使用 Grok 4.5。
-
----
 
 ## 开始体验 Grok 4.5
 
