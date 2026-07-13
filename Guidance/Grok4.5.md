@@ -45,17 +45,16 @@ irm https://x.ai/cli/install.ps1 | iex
 mkdir C:\grok; cd C:\grok
 ```
 然后再执行
-```bash
+```powershell
 grok
 ```
 
-```bash
+```powershell
 agent
 ```
 
 ```
 Make a beautiful simulation of the universe and solar system. should be sped up with adjustable time, realistic motion, orbits, stars. use threejs. Make the HUD well styled and conform to modern design principles.
-
 ```
 
 ```
