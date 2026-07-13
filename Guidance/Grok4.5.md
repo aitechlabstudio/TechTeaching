@@ -1,13 +1,5 @@
 # 免费试用 Grok 4.5：Grok Build 安装教程
 
-xAI 目前正在**限时免费开放 Grok 4.5** 在 **Grok Build** 和 **Cursor** 中的使用。
-
-立即体验：
-
-https://x.ai/cli
-
----
-
 ## 什么是 Grok Build？
 
 Grok Build 是 xAI 推出的 AI 编程工具，可以直接在终端中使用 Grok 4.5 来：
