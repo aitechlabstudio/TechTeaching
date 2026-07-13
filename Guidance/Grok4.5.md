@@ -49,20 +49,28 @@ mkdir C:\grok; cd C:\grok
 grok
 ```
 
-或者：
-
 ```bash
-grok "帮我写一个 Python 爬虫"
+agent
 ```
 
-```bash
-grok "解释这段 JavaScript 代码"
+```
+Make a beautiful simulation of the universe and solar system. should be sped up with adjustable time, realistic motion, orbits, stars. use threejs. Make the HUD well styled and conform to modern design principles.
+
 ```
 
-```bash
-grok "帮我修复这个 Docker 错误"
 ```
+使用 HTML、CSS 和 JavaScript 创建一个类似 SimCity 的城市建造游戏。
 
+要求：
+- 网格地图
+- 建造住宅区、商业区和发电厂
+- 金币和税收系统
+- 人口增长
+- 时间推进系统
+- 游戏存档
+- 美观的现代 HUD
+- 支持鼠标拖拽建造
+```
 ---
 
 ## 官方地址
