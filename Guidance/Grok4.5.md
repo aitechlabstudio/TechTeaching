@@ -72,8 +72,7 @@ Make a beautiful simulation of the universe and solar system. should be sped up 
 ```
 ## 测试简单的第一人称射击游戏
 ```
-Create a complete first-person shooter (FPS) game using Three.js and pure JavaScript.
-
+Create a complete first-person shooter (FPS) game
 Requirements:
 
 - Everything should run locally in a browser with no backend required.
