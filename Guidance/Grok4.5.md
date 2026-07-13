@@ -52,11 +52,11 @@ grok
 ```powershell
 agent
 ```
-
+## 测试太阳系模拟器
 ```
 Make a beautiful simulation of the universe and solar system. should be sped up with adjustable time, realistic motion, orbits, stars. use threejs. Make the HUD well styled and conform to modern design principles.
 ```
-
+## 测试城市建造游戏
 ```
 使用 HTML、CSS 和 JavaScript 创建一个类似 SimCity 的城市建造游戏。
 
@@ -69,6 +69,73 @@ Make a beautiful simulation of the universe and solar system. should be sped up 
 - 游戏存档
 - 美观的现代 HUD
 - 支持鼠标拖拽建造
+```
+## 测试简单的第一人称射击游戏
+```
+Create a complete first-person shooter (FPS) game using Three.js and pure JavaScript.
+
+Requirements:
+
+- Everything should run locally in a browser with no backend required.
+- Use Three.js for all 3D rendering.
+- Create a modern sci-fi environment with buildings, obstacles, lighting, shadows, and atmospheric effects.
+- Implement true first-person controls using Pointer Lock API:
+  - WASD movement
+  - Mouse look
+  - Jumping
+  - Sprinting
+  - Collision detection
+- Add weapons:
+  - Assault rifle
+  - Pistol
+  - Reload system
+  - Muzzle flash
+  - Recoil animation
+  - Ammo counter
+- Add enemies:
+  - Enemy AI patrols the map
+  - Detects the player
+  - Chases and attacks the player
+  - Takes damage and dies
+  - Respawns after a delay
+- Add gameplay systems:
+  - Health system
+  - Damage indicators
+  - Kill counter
+  - Score system
+  - Game over screen
+  - Pause menu
+- Add visual effects:
+  - Crosshair
+  - Particle effects
+  - Explosions
+  - Bullet impacts
+  - Dynamic lighting
+  - Screen shake
+- Create a modern HUD:
+  - Health bar
+  - Ammo display
+  - Score display
+  - FPS counter
+  - Minimap
+- Add sound effects:
+  - Gunshots
+  - Reload sounds
+  - Footsteps
+  - Explosions
+  - Background music
+- Optimize performance to maintain smooth gameplay.
+- Organize the code into multiple files and use clean software architecture.
+- Include comments explaining the implementation.
+
+After generating the project:
+1. Create all required files and folders.
+2. Explain how to run the game.
+3. Automatically start a local web server.
+4. Launch the game in the browser and verify that it is fully playable.
+5. If there are any errors, debug and fix them automatically until the game runs correctly.
+
+The final result should feel like a small but complete FPS game rather than a simple demo.
 ```
 ---
 
