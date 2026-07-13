@@ -137,6 +137,34 @@ After generating the project:
 
 The final result should feel like a small but complete FPS game rather than a simple demo.
 ```
+### 测试生成PPT
+```
+请创建一个完整的 PowerPoint 演示文稿，主题为《2026 年人工智能编程助手行业发展趋势》。
+
+要求：
+
+1. 生成 12-15 页 PPT。
+2. 包含封面页、目录页、总结页和感谢页。
+3. 包含以下章节：
+   - AI 编程助手的发展历程
+   - GPT、Claude、Gemini、Grok 的对比
+   - 市场规模与增长趋势
+   - 企业应用案例
+   - 开发者使用场景
+   - 未来发展方向与挑战
+4. 自动生成图表，包括：
+   - 柱状图
+   - 折线图
+   - 饼图
+   - 对比表格
+5. 每页采用现代化商务风格设计：
+   - 深色科技主题
+   - 统一配色方案
+   - 图标和数据可视化元素
+   - 简洁且具有演示感的排版
+6. 自动生成演讲备注（Speaker Notes）。
+7. 最终输出为可编辑的 .pptx 文件。
+```
 ---
 
 ## 官方地址
