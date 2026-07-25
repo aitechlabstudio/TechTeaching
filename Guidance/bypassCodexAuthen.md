@@ -25,10 +25,14 @@
 
 ### 1. 打开扩展程序页面
 
-打开 Chrome 浏览器，在地址栏输入：
+Chrome 浏览器，在地址栏输入：
 
 ```
 chrome://extensions/
+```
+Edge浏览器， 在地址栏输入：
+```
+edge://extensions/
 ```
 
 然后按 **Enter**。
