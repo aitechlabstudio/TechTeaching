@@ -134,7 +134,7 @@ macOS / Linux
 
 如何快速打开（Windows）
 
-按 Win + R，输入：
+直接在文件浏览器输入
 ```
 %USERPROFILE%\.codex
 ```
