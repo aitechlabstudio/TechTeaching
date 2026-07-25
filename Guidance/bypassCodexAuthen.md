@@ -47,7 +47,7 @@ chrome://extensions/
 
 点击左上角：
 
-**Load unpacked（加载已解压的扩展程序）**
+**Load unpacked（加载已未打包的扩展程序）**
 
 然后选择刚刚解压后的项目中的：
 
@@ -114,8 +114,27 @@ extension
 
 ---
 
-# 完成
+# 打开.codex目录
+Windows:
+```
+C:\Users\<你的用户名>\.codex\
+```
+macOS / Linux
+```
+~/.codex/
+```
 
-至此，你已经成功导出了 ChatGPT 登录凭证，并生成了可直接使用的 `auth.json` 文件。
+里面通常会包含：
+```
+.codex
+│
+├── auth.json          ← 登录凭证（用导出的文件替换这个）
+├── config.toml        ← Codex 配置文件
+```
 
-后续只需将该文件放到对应工具要求的位置，即可完成登录认证。
+如何快速打开（Windows）
+
+按 Win + R，输入：
+```
+%USERPROFILE%\.codex
+```
