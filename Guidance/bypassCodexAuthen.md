@@ -85,7 +85,7 @@ extension
 
 ---
 
-## 第四步：替换.codex目录里面的auth.json文件
+# 第四步：把auth.json文件拷贝到.codex目录里
 
 Windows:
 ```
