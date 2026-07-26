@@ -14,7 +14,7 @@ Kimi K3 火爆全网，由于用户数量暴增，官方已经暂停接受新的
 
 打开 Kimi 开放平台：
 
-https://platform.kimi.com/console/account
+https://platform.kimi.com
 
 首次注册通常会赠送 **15 元余额**。
 
