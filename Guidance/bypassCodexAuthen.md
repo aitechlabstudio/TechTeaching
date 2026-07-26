@@ -118,7 +118,8 @@ extension
 
 ---
 
-# 打开.codex目录
+## 第四步：替换.codex目录里面的authn.json文件
+
 Windows:
 ```
 C:\Users\<你的用户名>\.codex\
