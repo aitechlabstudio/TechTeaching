@@ -73,7 +73,7 @@ extension
 
 ---
 
-# 第三步：导出 `auth.json`
+# 第三步：使用插件导出 `auth.json`
 
 ## 1. 登录 ChatGPT
 
