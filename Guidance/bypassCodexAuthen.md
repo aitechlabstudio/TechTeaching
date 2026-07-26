@@ -118,7 +118,7 @@ extension
 
 ---
 
-## 第四步：替换.codex目录里面的authn.json文件
+## 第四步：替换.codex目录里面的auth.json文件
 
 Windows:
 ```
