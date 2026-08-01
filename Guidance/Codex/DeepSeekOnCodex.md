@@ -19,7 +19,7 @@
 # 前提准备
 
 ## 1. 安装 Codex 客户端
-
+https://chatgpt.com/zh-Hans-CN/download/   
 确保已经安装以下至少一种 Codex 客户端，并且**至少启动过一次**（确保 `~/.codex` 目录已经生成）。
 
 支持：
@@ -39,7 +39,7 @@
 ## 2. 获取 DeepSeek API Key
 
 登录 **DeepSeek Platform** 
-https://platform.deepseek.com/
+https://platform.deepseek.com/   
 步骤：
 
 1. 注册或登录账号
