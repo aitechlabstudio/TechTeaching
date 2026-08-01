@@ -133,7 +133,7 @@ cline
 | 名称 | 地址 |
 |------|------|
 | Node.js 官网 | https://nodejs.org/ |
-| Cline 官网 | https://cline.ai/ |
+| Cline 官网 | https://cline.bot/ |
 | DeepSeek 官网 | https://deepseek.com/ |
 
 ---
