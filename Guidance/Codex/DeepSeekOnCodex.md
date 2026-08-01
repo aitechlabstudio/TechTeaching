@@ -38,8 +38,8 @@
 
 ## 2. 获取 DeepSeek API Key
 
-登录 **DeepSeek Platform**
-
+登录 **DeepSeek Platform** 
+https://platform.deepseek.com/
 步骤：
 
 1. 注册或登录账号
@@ -50,7 +50,7 @@
 ---
 
 # 方法一：官方一键配置脚本（推荐）
-
+参考： https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/codex
 DeepSeek 官方提供了一键配置脚本，可以自动完成全部配置，是目前最简单的方法。
 
 ---
