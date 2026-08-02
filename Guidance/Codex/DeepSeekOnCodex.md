@@ -485,83 +485,7 @@ DeepSeek 提供免费测试 Endpoint。
 
 ---
 
-# 常见问题（FAQ）
 
-## Q1：运行官方脚本后 Codex 无法启动？
-
-解决：
-
-- 检查 `models.json`
-- 检查 JSON 是否合法
-- Codex CLI ≥ 0.144.0
-- 使用脚本菜单第 3 项恢复配置
-- 或使用 CC Switch 修复配置
-
----
-
-## Q2：切换供应商需要重新登录吗？
-
-不需要。
-
-CC Switch 会自动切换：
-
-- auth.json
-- config.toml
-
-无需再次：
-
-```
-codex login
-```
-
----
-
-## Q3：为什么会话不能跨供应商继续？
-
-原因：
-
-Codex 的推理内容（`encrypted_content`）只能由生成它的后端解密。
-
-因此：
-
-- 同一 Provider 可以继续
-- 跨 Provider 无法恢复
-
-属于 Codex 的设计限制。
-
----
-
-## Q4：为什么用量统计不准确？
-
-CC Switch **v3.19.1** 已修复：
-
-- Claude Desktop 双计问题
-- 自动校正最近 30 天数据
-- 可手动执行：
-
-```
-重建 Codex 用量
-```
-
----
-
-## Q5：DeepSeek V4 Pro 为什么不能使用？
-
-目前：
-
-```
-deepseek-v4-pro
-```
-
-预计 **2026 年 8 月初**支持接入 Codex。
-
-现阶段建议：
-
-```
-deepseek-v4-flash
-```
-
----
 
 # 总结
 
@@ -581,3 +505,47 @@ deepseek-v4-flash
 
 ---
 
+# 测试
+```
+Your objective is to generate a single, fully functional, self-contained HTML file (containing HTML, CSS, and modern ES6 JavaScript) that implements a hyper-realistic, highly detailed, dynamic 3D First-Person Shooter scene directly inspired by the gritty aesthetic of Call of Duty: Black Ops 2 (e.g., "Raid" or "Standoff" atmosphere). 
+
+This is an explicit stress test of your spatial logic, shader programming, performance optimization, and WebGL code execution boundaries. Do NOT output pseudocode, truncated sections, `// TODO` comments, or place markup placeholders like `<!-- Add rest of code here -->`.
+
+---
+
+### TECHNICAL REQUIREMENTS & CONSTRAINTS
+
+1. DEPLOYMENT & CONSTRAINTS:
+   - Must be contained entirely within a single `.html` file.
+   - External dependencies MUST be limited strictly to standard CDN scripts (e.g., Three.js r128+, PointerLockControls, and optional Lightweight Physics such as Cannon.js or custom lightweight Verlet integration).
+   - No external 3D asset files (.gltf/.obj) or external image textures allowed. ALL assets, textures, terrain maps, and materials MUST be procedurally generated via JavaScript Canvas/WebGL render targets at runtime.
+
+2. GRAPHICS & LIGHTING ENGINE (Hyper-Realistic BO2 Aesthetic):
+   - Lighting: Implement dynamic real-time lights (a sun directional light casting soft dynamic shadow maps, combined with multiple localized flickering point lights/neon accents for atmospheric tension).
+   - PBR Materials: Procedurally construct micro-detailed Physically-Based Rendering materials (roughness maps, normal maps generated from procedural noise, metallic maps, and ambient occlusion maps) to render realistic brushed metal, wet concrete, cracked tiles, and polished glass.
+   - Post-Processing Pipeline: Build or configure a post-processing stack featuring:
+     * Custom Vignette & Film Grain.
+     * High-Dynamic Range (HDR) Tone Mapping (Unreal or ACESFilmic tone mapping).
+     * High-intensity Bloom (emissive lighting glow).
+     * Depth of Field (DoF) or Screen-Space Ambient Occlusion (SSAO) simulation.
+
+3. GEOMETRY & ENVIRONMENTAL DETAIL:
+   - Architecture: Construct a high-density, multi-level architectural combat space (modern minimalist villa or gritty urban outpost) with detailed structural elements: dynamic stairs, balconies, pillars, shattered glass frames, and recessed lighting fixtures.
+   - Micro-Geometry: Include high-detail environmental props generated entirely out of procedural primitives (tactical crates with painted military labels, detailed weapons on racks, realistic foliage/palms with subtle wind animation vertex offsets).
+
+4. PLAYER CONTROLLER & HIGH-FIDELITY PHYSICS:
+   - FPS Controller: Smooth PointerLock first-person controls featuring WASD movement, jumping, sprinting, crouch state shifts, camera tilt when moving horizontally, and smooth camera inertia.
+   - Viewmodel / Weapon: Procedurally generate a high-detail assault rifle or tactical SMG visible in the player’s hands, complete with continuous idle sway, realistic recoil impulse, and ADS (Aim Down Sights) camera interpolation upon right-click.
+   - Physics & Destruction: Implement responsive rigid-body physics for dynamic interactive objects (barrels, target dummies, or debris) that react to player collisions and kinetic impacts. Include volumetric muzzle flashes, dynamic light flashes per shot, hit impacts (sparks and debris particle bursts), and persistent bullet decals projected onto hit geometry.
+
+5. ATMOSPHERIC PARTICLES & DYNAMICS:
+   - GPU/Particle System: Render continuous volumetric atmospheric particle systems representing ambient airborne dust motes floating in light shafts, dynamic smoke plumes, and sparks.
+
+6. PERFORMANCE OPTIMIZATION:
+   - High FPS Target: Must employ efficient instanced rendering where applicable, proper shadow map resolution budget management, and memory cleanup (frustum culling) to sustain fluid frame rates at 60 FPS.
+
+---
+
+### OUTPUT DIRECTIVE
+Output ONLY the raw HTML script block with zero conversational preamble. Ensure every system—from the canvas initializers to the post-processing pipeline and physics step loop—is completely fleshed out and fully functional upon opening the file in any modern web browser.
+```
